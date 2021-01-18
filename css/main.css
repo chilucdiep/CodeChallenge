@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #22282f;
+}
+
+h1 {
+  margin: 32px;
+  color: #ffffff;
+  font-size: 64px;
+}
+
+.wrapper {
+  padding: 1.5em 1.5em;
+  padding-bottom: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.select-container {
+  margin-top: 50px;
+  padding: 32px;
+}
+
+.select-container .select-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.select-container .select-box .movie-box {
+  background: #2f3640;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: #f5f6fa;
+  padding: 12px 24px;
+}
+
+.select-container .select-box .movie-box input[type=text] {
+  background: #3c4350;
+  border: none;
+  width: 100%;
+  padding: 8px;
+  margin: 15px 0 5px;
+  border-radius: 5px;
+}
+
+.select-container .select-box .movie-box input:focus {
+  outline: none;
+}
+
+.select-container .select-box .movie-box ::-webkit-input-placeholder {
+  color: #e2e3e7;
+}
+
+.select-container .select-box .movie-box :-ms-input-placeholder {
+  color: #e2e3e7;
+}
+
+.select-container .select-box .movie-box ::-ms-input-placeholder {
+  color: #e2e3e7;
+}
+
+.select-container .select-box .movie-box ::placeholder {
+  color: #e2e3e7;
+}
+
+.select-container .select-box .movie-box input, .select-container .select-box .movie-box select, .select-container .select-box .movie-box textarea {
+  color: #e2e3e7;
+}
+
+.select-container .select-box .search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.select-container .select-box .search-box button {
+  padding: 0 25px;
+  border-radius: 30px;
+  border: none;
+  margin: 15px 20px 5px 50px;
+  background-color: #775bb3;
+  font-weight: 600;
+  color: #f5f6fa;
+}
+
+.select-container .select-box .search-box button:hover {
+  opacity: 95%;
+  cursor: pointer;
+  -webkit-transform: translateY(-0.8px);
+          transform: translateY(-0.8px);
+  -webkit-box-shadow: 0 15px 15px rgba(72, 19, 159, 0.1);
+          box-shadow: 0 15px 15px rgba(72, 19, 159, 0.1);
+}
+
+.select-container .select-box .search-bar {
+  position: relative;
+  width: 100%;
+}
+
+.select-container .results-container {
+  background: #2f3640;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: #f5f6fa;
+  padding: 12px 24px;
+}
+
+.select-container .results-container ul {
+  list-style: none;
+}
+
+.select-container .results-container ul li {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.select-container .results-container ul li button {
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: none;
+  margin: 5px 20px 5px 50px;
+  background-color: #3c4350;
+  font-weight: 600;
+  color: #f5f6fa;
+}
+
+.nominations-container {
+  margin: 80px 0 0 50px;
+  padding: 12px 24px;
+  background-color: #2f3640;
+  color: #f5f6fa;
+  width: 300px;
+  min-height: 400px;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.nominations-container h2 {
+  margin-bottom: 20px;
+}
+
+.nominations-container .nominations {
+  background-color: #3c4350;
+  padding: 10px 20px;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+}
+
+.nominations-container .nominations:after {
+  content: '';
+  background: url("../images/trash.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 15px;
+  right: 15px;
+  top: 11px;
+}
+
+.nominations-container .nominations:hover:after {
+  content: '';
+  background: url(../images/trashRed.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 15px;
+  right: 15px;
+  top: 11px;
+}
+/*# sourceMappingURL=main.css.map */
